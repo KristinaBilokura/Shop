@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="GotnAGZ-P88IX0yKxFhT3SADpa_MEjdqPWDbvhVHxV8" />
+    <title>HappyStore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="back">
+        <div class="container1">
+            <ul id="menu">
+               <li class="do"><a href="task5.html"><img src="images/new.png" alt="" id="logo"></a></li>
+                <li class="do"><a href=""></a>HOME</li>
+                <li class="do"><a href=""></a>SHOP</li>
+                <li class="do"><a href=""></a>BLOG</li>
+                <li class="do"><a href=""></a>CONTACTS</li>
+                <li class="do"><a href=""></a>SIGN UP</li>
+            </ul> 
+        </div>
+        <hr>
+        <div class="container2">
+                 <div class="leftside">
+                    <div id="zeroleft">
+                    <img src="images/idea5.jpg" alt="" id="main" >
+   
+                    </div>
+                    <div><h1>PRODUCTS</h1>
+                    <h3>Pull the product to the basket-></h3>
+                    <div id="zero">
+                    <img src="images/whow.png" alt="" >
+
+                    </div>
+                    </div>
+                    <div  class="firstleft product">
+                        <ul class="clear">
+                            <li data-id="1">
+                                <a href="#">
+                                    <img src="images/product6.jpeg" alt="">
+                                    <h5>Vase</h5>
+                                    <h5>Fun vases and fresh flowers to brighten Mom's desk.</h5>
+                                    <h6>-20$-</h6>
+             
+                                </a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                    <div  class="secondleft product">
+                            <ul class="clear">
+                            <li data-id="2">
+                                <a href="#">
+                                    <img src="images/product2.jpg" alt="">
+                                    <h5>Staple</h5>
+                                    <h5>Classic wardrobe staples</h5>
+                                    <h6>-30$-</h6>
+   
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="thirdleft product">
+                        <ul class="clear">
+                            <li data-id="3">
+                                <a href="#">
+                                    <img src="images/product3.jpg" alt="">
+                                    <h5>Table</h5>
+                                    <h5>Hemnes mirror bedside table</h5>
+                                    <h6>-120$-</h6>
+   
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="forthleft product">
+                        <ul class="clear">
+                            <li data-id="4">
+                                <a href="#">
+                                    <img src="images/product5.jpg" alt="" >
+                                    <h5>Basket</h5>
+                                    <h5>Wrapped basket</h5>
+                                    <h6>-150$-</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="firstleft product">
+                        <ul class="clear">
+                            <li data-id="5">
+                                <a href="#">
+                                    <img src="images/product4.jpg" alt="">
+                                    <h5>Rolling card</h5>
+                                    <h5>Rolling Cart For Storage</h5>
+                                    <h6>-260$-</h6>
+             
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="secondleft product">
+                        <ul class="clear">
+                            <li data-id="6">
+                                <a href="#">
+                                    <img src="images/product8.png" alt="">
+                                    <h5>Nightstand</h5>
+                                    <h5>Tarva Nightstand</h5>
+                                    <h6>-100$-</h6>
+             
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="thirdleft product">
+                        <ul class="clear">
+                            <li data-id="7">
+                                <a href="#">
+                                    <img src="images/product9.jpg" alt="">
+                                    <h5>Lamp</h5>
+                                    <h5>Arstid Table Lamp Plus</h5>
+                                    <h6>-60$-</h6>
+             
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="forthleft product">
+                        <ul class="clear">
+                            <li data-id="8">
+                                <a href="#">
+                                    <img src="images/product.gif" alt="">
+                                    <h5>Chair</h5>
+                                    <h5>Charming Hanging Egg Chair</h5>
+                                    <h6>-500$-</h6>
+             
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>PRODUCT</h1>
+                    <div id="fiveleft">
+                        <img src="images/idea3.jpg" alt="" id="fiveimg">
+                    </div>
+                    <div id="sixleft"> <br>
+                        <h1>Starting at</h1>
+                        <h2>$352.00 <del>$452.00</del></h2>
+                        <h1><a href="">SHOP NOW</a></h1>
+                    </div>
+                    <script>
+                        $(".product li").draggable({
+                           revert:true,
+                           drag:function () {
+                              $(this).addClass("active");
+                              $(this).closest(".product").addClass("active");
+                           },
+                           stop:function () {
+                              $(this).removeClass("active").closest(".product").removeClass("active");
+                           }
+                        });
+                    </script>
+                </div>
+                <div class="rightside">
+                   <div id="zeroright">
+                        <h1 id="login">LOG IN</h1>
+                        <form>
+                            <div class="imgcontainer">
+                            <img src="images/social-network.png" alt="Avatar" class="avatar">
+                              </div>
+                          <div class="container">
+                            <label><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit">Login</button>
+                            <label>
+                              <input type="checkbox" checked="checked"> Remember me
+                            </label>
+                          </div>
+                          <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                          </div>
+                        </form>
+                    </div>
+                    <div id="firstright" class="basket">
+                       <h1>KORZYNA</h1>
+                           <div class="basket_list">
+                                    <div class="head">
+                                        <span class="name">Name</span>
+                                        <span class="count">Count</span>
+                                    </div>
+                                    <ul>
+                                    </ul>
+                            </div>
+                    <script>
+                        var quantity=0;
+                    $(".basket").droppable({                 
+                       activeClass:"active",
+                       hoverClass:"hover",
+                       tolerance:"touch",
+                       drop:function (event, ui) {
+                          var basket = $(this),
+                          move = ui.draggable,
+                          itemId = basket.find("ul li[data-id='" + move.attr("data-id") + "']");             
+                         if (itemId.html() != null) {
+                              ++quantity;
+                             itemId.find("input").val(parseInt(itemId.find("input").val()) + 1);
+                          }
+                          else {
+                              ++quantity;
+                             addBasket(basket, move);
+                             move.find("input").val(parseInt(move.find("input").val()) + 1);
+                        }
+                       }
+                    });
+                    function addBasket(basket, move) {                        
+                       basket.find("ul").append('<li data-id="' + move.attr("data-id") + '">'
+                          + '<span class="name">' + move.find("h5").html()+ move.find("h6").html()+'<p>General count of products='+quantity+'</p>' + '</span>'
+                          + '<input class="count" value="1" type="text">'
+                          + '<button class="delete">&#10005;</button>');
+                                                
+                    }
+                 
+                        
+                        $("body").on("click", ".basket ul li button.delete", function() { 
+                        $(this).closest("li").remove();
+                        --quantity;}
+
+                                    );
+                        </script>
+                    </div>
+                    <div id="secondright">
+                            <p id="cate"  class="orange1">Categories</p>
+                            <ul class="mark">
+                                <li>High tech</li>
+                                <li>Premium</li>
+                                <li>Vintage</li>
+                                <li>New</li>
+                                <li>Sale</li>
+                            </ul>
+                    </div>
+                    <div id="thirdright"></div>
+                    <img src="images/sale2.jpg" alt="" id="sale">
+                    <div id="forthright">
+                        <h1>SALE  UPTO 70%</h1>
+                        <h2>Trendy home decor.</h2>
+                    </div>
+                </div> 
+        </div>
+    </div>
+        <div class="container3">
+            <div id="one"><br> 
+                        <h1>OKSTORE</h1>
+                        <br>   
+            <h2>Interior Design With OKSTORE Luxury Furniture</h2>
+            </div>
+            <div id="two">
+                   <br>
+                   <br>
+                   <br>
+                    <h2>Shipping: Shipping costs fluctuate depending on whether you're buying smaller accessories or furniture.</h2> 
+            </div>
+            <div id="three">
+                      <br>
+                       <br>
+                       <br>
+                        <h2>Pricing: Bins and baskets range from $4.95 to $109, shelves and wall hooks range from $4.95 to $249.</h2>
+            </div>
+        </div>
+        <div class="container4">
+
+        </div>
+
+        <div class="container7">
+            <p class="end"><a href="">Contact Us</a> | <a href="">Privacy Policy</a> | <a href="">Terms & Condition</a></p>
+            <p class="end">Www.okstore.com © 2016. All Rights Reserved.</p>        
+        </div>
+</body>
+</html>
